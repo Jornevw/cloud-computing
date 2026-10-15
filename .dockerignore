@@ -1,5 +1,7 @@
 .git
-__pychache__
+__pycache__/
+*.pyc
 *.db
 data/
-.venv
+.venv/
+.env
