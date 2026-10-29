@@ -17,3 +17,7 @@ spec:
           image: ghcr.io/jornevw/storingsmelder:1.0
           ports:
             - containerPort: 8000
+          env:
+            # TODO: wachtwoord volgende week naar Kubernetes Secret verplaatsen
+            - name: DATABASE_URL
+              value: "postgresql://storingsmelder:labo3geheim@db:5432/storingen"
